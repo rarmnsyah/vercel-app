@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api/telegram_webhook.py": {
+      "runtime": "python3.13"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/telegram_webhook/(.*)",
+      "dest": "/api/telegram_webhook"
+    }
+  ],
+  "env": {
+    "BOT_TOKEN": "@bot_token",
+    "WEBHOOK_URL": "@webhook_url"
+  }
+}
