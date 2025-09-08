@@ -1,17 +1,8 @@
 {
+  "version": 2,
   "functions": {
-    "api/telegram_webhook.py": {
-      "runtime": "python3.13"
+    "api/*.py": {
+      "runtime": "vercel-python@3.11"
     }
-  },
-  "routes": [
-    {
-      "src": "/api/telegram_webhook/(.*)",
-      "dest": "/api/telegram_webhook"
-    }
-  ],
-  "env": {
-    "BOT_TOKEN": "@bot_token",
-    "WEBHOOK_URL": "@webhook_url"
   }
 }

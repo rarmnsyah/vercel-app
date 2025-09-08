@@ -10,7 +10,7 @@ from pydantic import BaseModel
 app = FastAPI(title="Telegram Bot Webhook", version="1.0.0")
 
 # Configuration - Use environment variables
-BOT_TOKEN = os.environ.get('BOT_TOKEN', 'YOUR_BOT_TOKEN_HERE')
+BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', 'YOUR_BOT_TOKEN_HERE')
 WEBHOOK_URL = os.environ.get('WEBHOOK_URL', 'https://your-app.vercel.app/api/telegram_webhook')
 
 # Telegram API base URL
